@@ -1,0 +1,568 @@
+/*!
+Theme Name: exocube design cr
+Theme URI: http://www.exocubedesigncr.com
+Author: ExoCube Design CR
+Author URI: http://www.exocubedesigncr.com
+Description: ExoCube Design CR responsive design
+Version: 1.0.0
+*/
+/*exocube zero responsive template*/
+/*=====================================*/
+/*=====================================*/
+/*=====================================*/
+/*=== Exocube Zero Theme responsive ===*/
+/*=====================================*/
+/*=====================================*/
+/*=====================================*/
+/*-----reset init style------*/
+@import url("https://fonts.googleapis.com/css?family=Barlow");
+* { box-sizing: border-box !important; font-family: 'Barlow', sans-serif; margin: 0; padding: 0; }
+
+html { font-size: 10px; }
+
+.header, .footer, .main-content { display: block; width: 100%; min-height: 100px; margin: auto; }
+
+.wrap { display: block; max-width: 1280px; margin: auto; }
+
+/*------row , flex properties------*/
+.row::after { content: ""; clear: both; display: block; }
+
+.row.flex { display: flex; flex-wrap: wrap; align-items: stretch; }
+
+.row .flex-align-center { display: flex; align-items: center; }
+
+.row .flex-align-top { display: flex; align-items: flex-start; }
+
+.row .flex-align-bottom { display: flex; align-items: flex-end; }
+
+.row .column, .row .columns { float: left; padding: 10px; }
+
+/*-----font and text properties------*/
+h1, .h1 { font-size: 4.8rem; }
+
+h2, .h2 { font-size: 4.2rem; }
+
+h3, .h3 { font-size: 3.6rem; }
+
+h4, .h4 { font-size: 3rem; }
+
+h5, .h5 { font-size: 2.4rem; }
+
+h6, .h6 { font-size: 1.8rem; }
+
+.text-tiny { font-size: 1rem; }
+
+.text-small { font-size: 1.4rem; }
+
+p, .text-normal { font-size: 1.8rem; }
+
+.text-medium { font-size: 2.2rem; }
+
+.text-large { font-size: 2.6rem; }
+
+.text-xlarge { font-size: 3rem; }
+
+.bold, .strong { font-weight: bold; }
+
+.unbold { font-weight: normal; }
+
+.underline { text-decoration: underline; }
+
+.text-center { text-align: center; }
+
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.text-justify { text-align: justify; }
+
+.show { display: block; }
+
+.hide { display: none; }
+
+/*------main media query loop------*/
+@media screen and (min-width: 0px) { /*------cols grid------*/
+  .tiny-col-1 { width: 8.33%; }
+  .tiny-col-2 { width: 16.66%; }
+  .tiny-col-3 { width: 25%; }
+  .tiny-col-4 { width: 33.33%; }
+  .tiny-col-5 { width: 41.66%; }
+  .tiny-col-6 { width: 50%; }
+  .tiny-col-7 { width: 58.33%; }
+  .tiny-col-8 { width: 66.66%; }
+  .tiny-col-9 { width: 75%; }
+  .tiny-col-10 { width: 83.33%; }
+  .tiny-col-11 { width: 91.66%; }
+  .tiny-col-12 { width: 100%; }
+  /*----margin size prefix----*/
+  .tiny-margin-zero { margin: 0; }
+  .tiny-margin-top-zero { margin-top: 0; }
+  .tiny-margin-bottom-zero { margin-bottom: 0; }
+  .tiny-margin-left-zero { margin-left: 0; }
+  .tiny-margin-right-zero { margin-right: 0; }
+  .tiny-margin-horiz-zero { margin-top: 0; margin-bottom: 0; }
+  .tiny-margin-vert-zero { margin-left: 0; margin-right: 0; }
+  .tiny-margin-tiny { margin: 1rem; }
+  .tiny-margin-top-tiny { margin-top: 1rem; }
+  .tiny-margin-bottom-tiny { margin-bottom: 1rem; }
+  .tiny-margin-left-tiny { margin-left: 1rem; }
+  .tiny-margin-right-tiny { margin-right: 1rem; }
+  .tiny-margin-horiz-tiny { margin-top: 1rem; margin-bottom: 1rem; }
+  .tiny-margin-vert-tiny { margin-left: 1rem; margin-right: 1rem; }
+  .tiny-margin-small { margin: 2rem; }
+  .tiny-margin-top-small { margin-top: 2rem; }
+  .tiny-margin-bottom-small { margin-bottom: 2rem; }
+  .tiny-margin-left-small { margin-left: 2rem; }
+  .tiny-margin-right-small { margin-right: 2rem; }
+  .tiny-margin-horiz-small { margin-top: 2rem; margin-bottom: 2rem; }
+  .tiny-margin-vert-small { margin-left: 2rem; margin-right: 2rem; }
+  .tiny-margin-medium { margin: 4rem; }
+  .tiny-margin-top-medium { margin-top: 4rem; }
+  .tiny-margin-bottom-medium { margin-bottom: 4rem; }
+  .tiny-margin-left-medium { margin-left: 4rem; }
+  .tiny-margin-right-medium { margin-right: 4rem; }
+  .tiny-margin-horiz-medium { margin-top: 4rem; margin-bottom: 4rem; }
+  .tiny-margin-vert-medium { margin-left: 4rem; margin-right: 4rem; }
+  .tiny-margin-large { margin: 8rem; }
+  .tiny-margin-top-large { margin-top: 8rem; }
+  .tiny-margin-bottom-large { margin-bottom: 8rem; }
+  .tiny-margin-left-large { margin-left: 8rem; }
+  .tiny-margin-right-large { margin-right: 8rem; }
+  .tiny-margin-horiz-large { margin-top: 8rem; margin-bottom: 8rem; }
+  .tiny-margin-vert-large { margin-left: 8rem; margin-right: 8rem; }
+  .tiny-margin-xlarge { margin: 16rem; }
+  .tiny-margin-top-xlarge { margin-top: 16rem; }
+  .tiny-margin-bottom-xlarge { margin-bottom: 16rem; }
+  .tiny-margin-left-xlarge { margin-left: 16rem; }
+  .tiny-margin-right-xlarge { margin-right: 16rem; }
+  .tiny-margin-horiz-xlarge { margin-top: 16rem; margin-bottom: 16rem; }
+  .tiny-margin-vert-xlarge { margin-left: 16rem; margin-right: 16rem; }
+  /*----paddings size prefix----*/
+  .tiny-padding-zero { padding: 0; }
+  .tiny-padding-top-zero { padding-top: 0; }
+  .tiny-padding-bottom-zero { padding-bottom: 0; }
+  .tiny-padding-left-zero { padding-left: 0; }
+  .tiny-padding-right-zero { padding-right: 0; }
+  .tiny-padding-horiz-zero { padding-top: 0; padding-bottom: 0; }
+  .tiny-padding-vert-zero { padding-left: 0; padding-right: 0; }
+  .tiny-padding-tiny { padding: 1rem; }
+  .tiny-padding-top-tiny { padding-top: 1rem; }
+  .tiny-padding-bottom-tiny { padding-bottom: 1rem; }
+  .tiny-padding-left-tiny { padding-left: 1rem; }
+  .tiny-padding-right-tiny { padding-right: 1rem; }
+  .tiny-padding-horiz-tiny { padding-top: 1rem; padding-bottom: 1rem; }
+  .tiny-padding-vert-tiny { padding-left: 1rem; padding-right: 1rem; }
+  .tiny-padding-small { padding: 2rem; }
+  .tiny-padding-top-small { padding-top: 2rem; }
+  .tiny-padding-bottom-small { padding-bottom: 2rem; }
+  .tiny-padding-left-small { padding-left: 2rem; }
+  .tiny-padding-right-small { padding-right: 2rem; }
+  .tiny-padding-horiz-small { padding-top: 2rem; padding-bottom: 2rem; }
+  .tiny-padding-vert-small { padding-left: 2rem; padding-right: 2rem; }
+  .tiny-padding-medium { padding: 4rem; }
+  .tiny-padding-top-medium { padding-top: 4rem; }
+  .tiny-padding-bottom-medium { padding-bottom: 4rem; }
+  .tiny-padding-left-medium { padding-left: 4rem; }
+  .tiny-padding-right-medium { padding-right: 4rem; }
+  .tiny-padding-horiz-medium { padding-top: 4rem; padding-bottom: 4rem; }
+  .tiny-padding-vert-medium { padding-left: 4rem; padding-right: 4rem; }
+  .tiny-padding-large { padding: 8rem; }
+  .tiny-padding-top-large { padding-top: 8rem; }
+  .tiny-padding-bottom-large { padding-bottom: 8rem; }
+  .tiny-padding-left-large { padding-left: 8rem; }
+  .tiny-padding-right-large { padding-right: 8rem; }
+  .tiny-padding-horiz-large { padding-top: 8rem; padding-bottom: 8rem; }
+  .tiny-padding-vert-large { padding-left: 8rem; padding-right: 8rem; }
+  .tiny-padding-xlarge { padding: 16rem; }
+  .tiny-padding-top-xlarge { padding-top: 16rem; }
+  .tiny-padding-bottom-xlarge { padding-bottom: 16rem; }
+  .tiny-padding-left-xlarge { padding-left: 16rem; }
+  .tiny-padding-right-xlarge { padding-right: 16rem; }
+  .tiny-padding-horiz-xlarge { padding-top: 16rem; padding-bottom: 16rem; }
+  .tiny-padding-vert-xlarge { padding-left: 16rem; padding-right: 16rem; }
+  /*----font and text properties----*/
+  .tiny-h1 { font-size: 4.8rem; }
+  .tiny-h2 { font-size: 4.2rem; }
+  .tiny-h3 { font-size: 3.6rem; }
+  .tiny-h4 { font-size: 3rem; }
+  .tiny-h5 { font-size: 2.4rem; }
+  .tiny-h6 { font-size: 1.8rem; }
+  .tiny-text-tiny { font-size: 1rem; }
+  .tiny-text-small { font-size: 1.4rem; }
+  .tiny-text-normal { font-size: 1.8rem; }
+  .tiny-text-medium { font-size: 2.2rem; }
+  .tiny-text-large { font-size: 2.6rem; }
+  .tiny-text-xlarge { font-size: 3rem; }
+  .tiny-bold, .tiny-strong { font-weight: bold; }
+  .tiny-unbold { font-weight: normal; }
+  .tiny-underline { text-decoration: underline; }
+  .tiny-text-center { text-align: center; }
+  .tiny-text-left { text-align: left; }
+  .tiny-text-right { text-align: right; }
+  .tiny-text-justify { text-align: justify; }
+  .tiny-show { display: block; }
+  .tiny-hide { display: none; } }
+@media screen and (min-width: 426px) { /*------cols grid------*/
+  .small-col-1 { width: 8.33%; }
+  .small-col-2 { width: 16.66%; }
+  .small-col-3 { width: 25%; }
+  .small-col-4 { width: 33.33%; }
+  .small-col-5 { width: 41.66%; }
+  .small-col-6 { width: 50%; }
+  .small-col-7 { width: 58.33%; }
+  .small-col-8 { width: 66.66%; }
+  .small-col-9 { width: 75%; }
+  .small-col-10 { width: 83.33%; }
+  .small-col-11 { width: 91.66%; }
+  .small-col-12 { width: 100%; }
+  /*----margin size prefix----*/
+  .small-margin-zero { margin: 0; }
+  .small-margin-top-zero { margin-top: 0; }
+  .small-margin-bottom-zero { margin-bottom: 0; }
+  .small-margin-left-zero { margin-left: 0; }
+  .small-margin-right-zero { margin-right: 0; }
+  .small-margin-horiz-zero { margin-top: 0; margin-bottom: 0; }
+  .small-margin-vert-zero { margin-left: 0; margin-right: 0; }
+  .small-margin-tiny { margin: 1rem; }
+  .small-margin-top-tiny { margin-top: 1rem; }
+  .small-margin-bottom-tiny { margin-bottom: 1rem; }
+  .small-margin-left-tiny { margin-left: 1rem; }
+  .small-margin-right-tiny { margin-right: 1rem; }
+  .small-margin-horiz-tiny { margin-top: 1rem; margin-bottom: 1rem; }
+  .small-margin-vert-tiny { margin-left: 1rem; margin-right: 1rem; }
+  .small-margin-small { margin: 2rem; }
+  .small-margin-top-small { margin-top: 2rem; }
+  .small-margin-bottom-small { margin-bottom: 2rem; }
+  .small-margin-left-small { margin-left: 2rem; }
+  .small-margin-right-small { margin-right: 2rem; }
+  .small-margin-horiz-small { margin-top: 2rem; margin-bottom: 2rem; }
+  .small-margin-vert-small { margin-left: 2rem; margin-right: 2rem; }
+  .small-margin-medium { margin: 4rem; }
+  .small-margin-top-medium { margin-top: 4rem; }
+  .small-margin-bottom-medium { margin-bottom: 4rem; }
+  .small-margin-left-medium { margin-left: 4rem; }
+  .small-margin-right-medium { margin-right: 4rem; }
+  .small-margin-horiz-medium { margin-top: 4rem; margin-bottom: 4rem; }
+  .small-margin-vert-medium { margin-left: 4rem; margin-right: 4rem; }
+  .small-margin-large { margin: 8rem; }
+  .small-margin-top-large { margin-top: 8rem; }
+  .small-margin-bottom-large { margin-bottom: 8rem; }
+  .small-margin-left-large { margin-left: 8rem; }
+  .small-margin-right-large { margin-right: 8rem; }
+  .small-margin-horiz-large { margin-top: 8rem; margin-bottom: 8rem; }
+  .small-margin-vert-large { margin-left: 8rem; margin-right: 8rem; }
+  .small-margin-xlarge { margin: 16rem; }
+  .small-margin-top-xlarge { margin-top: 16rem; }
+  .small-margin-bottom-xlarge { margin-bottom: 16rem; }
+  .small-margin-left-xlarge { margin-left: 16rem; }
+  .small-margin-right-xlarge { margin-right: 16rem; }
+  .small-margin-horiz-xlarge { margin-top: 16rem; margin-bottom: 16rem; }
+  .small-margin-vert-xlarge { margin-left: 16rem; margin-right: 16rem; }
+  /*----paddings size prefix----*/
+  .small-padding-zero { padding: 0; }
+  .small-padding-top-zero { padding-top: 0; }
+  .small-padding-bottom-zero { padding-bottom: 0; }
+  .small-padding-left-zero { padding-left: 0; }
+  .small-padding-right-zero { padding-right: 0; }
+  .small-padding-horiz-zero { padding-top: 0; padding-bottom: 0; }
+  .small-padding-vert-zero { padding-left: 0; padding-right: 0; }
+  .small-padding-tiny { padding: 1rem; }
+  .small-padding-top-tiny { padding-top: 1rem; }
+  .small-padding-bottom-tiny { padding-bottom: 1rem; }
+  .small-padding-left-tiny { padding-left: 1rem; }
+  .small-padding-right-tiny { padding-right: 1rem; }
+  .small-padding-horiz-tiny { padding-top: 1rem; padding-bottom: 1rem; }
+  .small-padding-vert-tiny { padding-left: 1rem; padding-right: 1rem; }
+  .small-padding-small { padding: 2rem; }
+  .small-padding-top-small { padding-top: 2rem; }
+  .small-padding-bottom-small { padding-bottom: 2rem; }
+  .small-padding-left-small { padding-left: 2rem; }
+  .small-padding-right-small { padding-right: 2rem; }
+  .small-padding-horiz-small { padding-top: 2rem; padding-bottom: 2rem; }
+  .small-padding-vert-small { padding-left: 2rem; padding-right: 2rem; }
+  .small-padding-medium { padding: 4rem; }
+  .small-padding-top-medium { padding-top: 4rem; }
+  .small-padding-bottom-medium { padding-bottom: 4rem; }
+  .small-padding-left-medium { padding-left: 4rem; }
+  .small-padding-right-medium { padding-right: 4rem; }
+  .small-padding-horiz-medium { padding-top: 4rem; padding-bottom: 4rem; }
+  .small-padding-vert-medium { padding-left: 4rem; padding-right: 4rem; }
+  .small-padding-large { padding: 8rem; }
+  .small-padding-top-large { padding-top: 8rem; }
+  .small-padding-bottom-large { padding-bottom: 8rem; }
+  .small-padding-left-large { padding-left: 8rem; }
+  .small-padding-right-large { padding-right: 8rem; }
+  .small-padding-horiz-large { padding-top: 8rem; padding-bottom: 8rem; }
+  .small-padding-vert-large { padding-left: 8rem; padding-right: 8rem; }
+  .small-padding-xlarge { padding: 16rem; }
+  .small-padding-top-xlarge { padding-top: 16rem; }
+  .small-padding-bottom-xlarge { padding-bottom: 16rem; }
+  .small-padding-left-xlarge { padding-left: 16rem; }
+  .small-padding-right-xlarge { padding-right: 16rem; }
+  .small-padding-horiz-xlarge { padding-top: 16rem; padding-bottom: 16rem; }
+  .small-padding-vert-xlarge { padding-left: 16rem; padding-right: 16rem; }
+  /*----font and text properties----*/
+  .small-h1 { font-size: 4.8rem; }
+  .small-h2 { font-size: 4.2rem; }
+  .small-h3 { font-size: 3.6rem; }
+  .small-h4 { font-size: 3rem; }
+  .small-h5 { font-size: 2.4rem; }
+  .small-h6 { font-size: 1.8rem; }
+  .small-text-tiny { font-size: 1rem; }
+  .small-text-small { font-size: 1.4rem; }
+  .small-text-normal { font-size: 1.8rem; }
+  .small-text-medium { font-size: 2.2rem; }
+  .small-text-large { font-size: 2.6rem; }
+  .small-text-xlarge { font-size: 3rem; }
+  .small-bold, .small-strong { font-weight: bold; }
+  .small-unbold { font-weight: normal; }
+  .small-underline { text-decoration: underline; }
+  .small-text-center { text-align: center; }
+  .small-text-left { text-align: left; }
+  .small-text-right { text-align: right; }
+  .small-text-justify { text-align: justify; }
+  .small-show { display: block; }
+  .small-hide { display: none; } }
+@media screen and (min-width: 768px) { /*------cols grid------*/
+  .medium-col-1 { width: 8.33%; }
+  .medium-col-2 { width: 16.66%; }
+  .medium-col-3 { width: 25%; }
+  .medium-col-4 { width: 33.33%; }
+  .medium-col-5 { width: 41.66%; }
+  .medium-col-6 { width: 50%; }
+  .medium-col-7 { width: 58.33%; }
+  .medium-col-8 { width: 66.66%; }
+  .medium-col-9 { width: 75%; }
+  .medium-col-10 { width: 83.33%; }
+  .medium-col-11 { width: 91.66%; }
+  .medium-col-12 { width: 100%; }
+  /*----margin size prefix----*/
+  .medium-margin-zero { margin: 0; }
+  .medium-margin-top-zero { margin-top: 0; }
+  .medium-margin-bottom-zero { margin-bottom: 0; }
+  .medium-margin-left-zero { margin-left: 0; }
+  .medium-margin-right-zero { margin-right: 0; }
+  .medium-margin-horiz-zero { margin-top: 0; margin-bottom: 0; }
+  .medium-margin-vert-zero { margin-left: 0; margin-right: 0; }
+  .medium-margin-tiny { margin: 1rem; }
+  .medium-margin-top-tiny { margin-top: 1rem; }
+  .medium-margin-bottom-tiny { margin-bottom: 1rem; }
+  .medium-margin-left-tiny { margin-left: 1rem; }
+  .medium-margin-right-tiny { margin-right: 1rem; }
+  .medium-margin-horiz-tiny { margin-top: 1rem; margin-bottom: 1rem; }
+  .medium-margin-vert-tiny { margin-left: 1rem; margin-right: 1rem; }
+  .medium-margin-small { margin: 2rem; }
+  .medium-margin-top-small { margin-top: 2rem; }
+  .medium-margin-bottom-small { margin-bottom: 2rem; }
+  .medium-margin-left-small { margin-left: 2rem; }
+  .medium-margin-right-small { margin-right: 2rem; }
+  .medium-margin-horiz-small { margin-top: 2rem; margin-bottom: 2rem; }
+  .medium-margin-vert-small { margin-left: 2rem; margin-right: 2rem; }
+  .medium-margin-medium { margin: 4rem; }
+  .medium-margin-top-medium { margin-top: 4rem; }
+  .medium-margin-bottom-medium { margin-bottom: 4rem; }
+  .medium-margin-left-medium { margin-left: 4rem; }
+  .medium-margin-right-medium { margin-right: 4rem; }
+  .medium-margin-horiz-medium { margin-top: 4rem; margin-bottom: 4rem; }
+  .medium-margin-vert-medium { margin-left: 4rem; margin-right: 4rem; }
+  .medium-margin-large { margin: 8rem; }
+  .medium-margin-top-large { margin-top: 8rem; }
+  .medium-margin-bottom-large { margin-bottom: 8rem; }
+  .medium-margin-left-large { margin-left: 8rem; }
+  .medium-margin-right-large { margin-right: 8rem; }
+  .medium-margin-horiz-large { margin-top: 8rem; margin-bottom: 8rem; }
+  .medium-margin-vert-large { margin-left: 8rem; margin-right: 8rem; }
+  .medium-margin-xlarge { margin: 16rem; }
+  .medium-margin-top-xlarge { margin-top: 16rem; }
+  .medium-margin-bottom-xlarge { margin-bottom: 16rem; }
+  .medium-margin-left-xlarge { margin-left: 16rem; }
+  .medium-margin-right-xlarge { margin-right: 16rem; }
+  .medium-margin-horiz-xlarge { margin-top: 16rem; margin-bottom: 16rem; }
+  .medium-margin-vert-xlarge { margin-left: 16rem; margin-right: 16rem; }
+  /*----paddings size prefix----*/
+  .medium-padding-zero { padding: 0; }
+  .medium-padding-top-zero { padding-top: 0; }
+  .medium-padding-bottom-zero { padding-bottom: 0; }
+  .medium-padding-left-zero { padding-left: 0; }
+  .medium-padding-right-zero { padding-right: 0; }
+  .medium-padding-horiz-zero { padding-top: 0; padding-bottom: 0; }
+  .medium-padding-vert-zero { padding-left: 0; padding-right: 0; }
+  .medium-padding-tiny { padding: 1rem; }
+  .medium-padding-top-tiny { padding-top: 1rem; }
+  .medium-padding-bottom-tiny { padding-bottom: 1rem; }
+  .medium-padding-left-tiny { padding-left: 1rem; }
+  .medium-padding-right-tiny { padding-right: 1rem; }
+  .medium-padding-horiz-tiny { padding-top: 1rem; padding-bottom: 1rem; }
+  .medium-padding-vert-tiny { padding-left: 1rem; padding-right: 1rem; }
+  .medium-padding-small { padding: 2rem; }
+  .medium-padding-top-small { padding-top: 2rem; }
+  .medium-padding-bottom-small { padding-bottom: 2rem; }
+  .medium-padding-left-small { padding-left: 2rem; }
+  .medium-padding-right-small { padding-right: 2rem; }
+  .medium-padding-horiz-small { padding-top: 2rem; padding-bottom: 2rem; }
+  .medium-padding-vert-small { padding-left: 2rem; padding-right: 2rem; }
+  .medium-padding-medium { padding: 4rem; }
+  .medium-padding-top-medium { padding-top: 4rem; }
+  .medium-padding-bottom-medium { padding-bottom: 4rem; }
+  .medium-padding-left-medium { padding-left: 4rem; }
+  .medium-padding-right-medium { padding-right: 4rem; }
+  .medium-padding-horiz-medium { padding-top: 4rem; padding-bottom: 4rem; }
+  .medium-padding-vert-medium { padding-left: 4rem; padding-right: 4rem; }
+  .medium-padding-large { padding: 8rem; }
+  .medium-padding-top-large { padding-top: 8rem; }
+  .medium-padding-bottom-large { padding-bottom: 8rem; }
+  .medium-padding-left-large { padding-left: 8rem; }
+  .medium-padding-right-large { padding-right: 8rem; }
+  .medium-padding-horiz-large { padding-top: 8rem; padding-bottom: 8rem; }
+  .medium-padding-vert-large { padding-left: 8rem; padding-right: 8rem; }
+  .medium-padding-xlarge { padding: 16rem; }
+  .medium-padding-top-xlarge { padding-top: 16rem; }
+  .medium-padding-bottom-xlarge { padding-bottom: 16rem; }
+  .medium-padding-left-xlarge { padding-left: 16rem; }
+  .medium-padding-right-xlarge { padding-right: 16rem; }
+  .medium-padding-horiz-xlarge { padding-top: 16rem; padding-bottom: 16rem; }
+  .medium-padding-vert-xlarge { padding-left: 16rem; padding-right: 16rem; }
+  /*----font and text properties----*/
+  .medium-h1 { font-size: 4.8rem; }
+  .medium-h2 { font-size: 4.2rem; }
+  .medium-h3 { font-size: 3.6rem; }
+  .medium-h4 { font-size: 3rem; }
+  .medium-h5 { font-size: 2.4rem; }
+  .medium-h6 { font-size: 1.8rem; }
+  .medium-text-tiny { font-size: 1rem; }
+  .medium-text-small { font-size: 1.4rem; }
+  .medium-text-normal { font-size: 1.8rem; }
+  .medium-text-medium { font-size: 2.2rem; }
+  .medium-text-large { font-size: 2.6rem; }
+  .medium-text-xlarge { font-size: 3rem; }
+  .medium-bold, .medium-strong { font-weight: bold; }
+  .medium-unbold { font-weight: normal; }
+  .medium-underline { text-decoration: underline; }
+  .medium-text-center { text-align: center; }
+  .medium-text-left { text-align: left; }
+  .medium-text-right { text-align: right; }
+  .medium-text-justify { text-align: justify; }
+  .medium-show { display: block; }
+  .medium-hide { display: none; } }
+@media screen and (min-width: 1024px) { /*------cols grid------*/
+  .large-col-1 { width: 8.33%; }
+  .large-col-2 { width: 16.66%; }
+  .large-col-3 { width: 25%; }
+  .large-col-4 { width: 33.33%; }
+  .large-col-5 { width: 41.66%; }
+  .large-col-6 { width: 50%; }
+  .large-col-7 { width: 58.33%; }
+  .large-col-8 { width: 66.66%; }
+  .large-col-9 { width: 75%; }
+  .large-col-10 { width: 83.33%; }
+  .large-col-11 { width: 91.66%; }
+  .large-col-12 { width: 100%; }
+  /*----margin size prefix----*/
+  .large-margin-zero { margin: 0; }
+  .large-margin-top-zero { margin-top: 0; }
+  .large-margin-bottom-zero { margin-bottom: 0; }
+  .large-margin-left-zero { margin-left: 0; }
+  .large-margin-right-zero { margin-right: 0; }
+  .large-margin-horiz-zero { margin-top: 0; margin-bottom: 0; }
+  .large-margin-vert-zero { margin-left: 0; margin-right: 0; }
+  .large-margin-tiny { margin: 1rem; }
+  .large-margin-top-tiny { margin-top: 1rem; }
+  .large-margin-bottom-tiny { margin-bottom: 1rem; }
+  .large-margin-left-tiny { margin-left: 1rem; }
+  .large-margin-right-tiny { margin-right: 1rem; }
+  .large-margin-horiz-tiny { margin-top: 1rem; margin-bottom: 1rem; }
+  .large-margin-vert-tiny { margin-left: 1rem; margin-right: 1rem; }
+  .large-margin-small { margin: 2rem; }
+  .large-margin-top-small { margin-top: 2rem; }
+  .large-margin-bottom-small { margin-bottom: 2rem; }
+  .large-margin-left-small { margin-left: 2rem; }
+  .large-margin-right-small { margin-right: 2rem; }
+  .large-margin-horiz-small { margin-top: 2rem; margin-bottom: 2rem; }
+  .large-margin-vert-small { margin-left: 2rem; margin-right: 2rem; }
+  .large-margin-medium { margin: 4rem; }
+  .large-margin-top-medium { margin-top: 4rem; }
+  .large-margin-bottom-medium { margin-bottom: 4rem; }
+  .large-margin-left-medium { margin-left: 4rem; }
+  .large-margin-right-medium { margin-right: 4rem; }
+  .large-margin-horiz-medium { margin-top: 4rem; margin-bottom: 4rem; }
+  .large-margin-vert-medium { margin-left: 4rem; margin-right: 4rem; }
+  .large-margin-large { margin: 8rem; }
+  .large-margin-top-large { margin-top: 8rem; }
+  .large-margin-bottom-large { margin-bottom: 8rem; }
+  .large-margin-left-large { margin-left: 8rem; }
+  .large-margin-right-large { margin-right: 8rem; }
+  .large-margin-horiz-large { margin-top: 8rem; margin-bottom: 8rem; }
+  .large-margin-vert-large { margin-left: 8rem; margin-right: 8rem; }
+  .large-margin-xlarge { margin: 16rem; }
+  .large-margin-top-xlarge { margin-top: 16rem; }
+  .large-margin-bottom-xlarge { margin-bottom: 16rem; }
+  .large-margin-left-xlarge { margin-left: 16rem; }
+  .large-margin-right-xlarge { margin-right: 16rem; }
+  .large-margin-horiz-xlarge { margin-top: 16rem; margin-bottom: 16rem; }
+  .large-margin-vert-xlarge { margin-left: 16rem; margin-right: 16rem; }
+  /*----paddings size prefix----*/
+  .large-padding-zero { padding: 0; }
+  .large-padding-top-zero { padding-top: 0; }
+  .large-padding-bottom-zero { padding-bottom: 0; }
+  .large-padding-left-zero { padding-left: 0; }
+  .large-padding-right-zero { padding-right: 0; }
+  .large-padding-horiz-zero { padding-top: 0; padding-bottom: 0; }
+  .large-padding-vert-zero { padding-left: 0; padding-right: 0; }
+  .large-padding-tiny { padding: 1rem; }
+  .large-padding-top-tiny { padding-top: 1rem; }
+  .large-padding-bottom-tiny { padding-bottom: 1rem; }
+  .large-padding-left-tiny { padding-left: 1rem; }
+  .large-padding-right-tiny { padding-right: 1rem; }
+  .large-padding-horiz-tiny { padding-top: 1rem; padding-bottom: 1rem; }
+  .large-padding-vert-tiny { padding-left: 1rem; padding-right: 1rem; }
+  .large-padding-small { padding: 2rem; }
+  .large-padding-top-small { padding-top: 2rem; }
+  .large-padding-bottom-small { padding-bottom: 2rem; }
+  .large-padding-left-small { padding-left: 2rem; }
+  .large-padding-right-small { padding-right: 2rem; }
+  .large-padding-horiz-small { padding-top: 2rem; padding-bottom: 2rem; }
+  .large-padding-vert-small { padding-left: 2rem; padding-right: 2rem; }
+  .large-padding-medium { padding: 4rem; }
+  .large-padding-top-medium { padding-top: 4rem; }
+  .large-padding-bottom-medium { padding-bottom: 4rem; }
+  .large-padding-left-medium { padding-left: 4rem; }
+  .large-padding-right-medium { padding-right: 4rem; }
+  .large-padding-horiz-medium { padding-top: 4rem; padding-bottom: 4rem; }
+  .large-padding-vert-medium { padding-left: 4rem; padding-right: 4rem; }
+  .large-padding-large { padding: 8rem; }
+  .large-padding-top-large { padding-top: 8rem; }
+  .large-padding-bottom-large { padding-bottom: 8rem; }
+  .large-padding-left-large { padding-left: 8rem; }
+  .large-padding-right-large { padding-right: 8rem; }
+  .large-padding-horiz-large { padding-top: 8rem; padding-bottom: 8rem; }
+  .large-padding-vert-large { padding-left: 8rem; padding-right: 8rem; }
+  .large-padding-xlarge { padding: 16rem; }
+  .large-padding-top-xlarge { padding-top: 16rem; }
+  .large-padding-bottom-xlarge { padding-bottom: 16rem; }
+  .large-padding-left-xlarge { padding-left: 16rem; }
+  .large-padding-right-xlarge { padding-right: 16rem; }
+  .large-padding-horiz-xlarge { padding-top: 16rem; padding-bottom: 16rem; }
+  .large-padding-vert-xlarge { padding-left: 16rem; padding-right: 16rem; }
+  /*----font and text properties----*/
+  .large-h1 { font-size: 4.8rem; }
+  .large-h2 { font-size: 4.2rem; }
+  .large-h3 { font-size: 3.6rem; }
+  .large-h4 { font-size: 3rem; }
+  .large-h5 { font-size: 2.4rem; }
+  .large-h6 { font-size: 1.8rem; }
+  .large-text-tiny { font-size: 1rem; }
+  .large-text-small { font-size: 1.4rem; }
+  .large-text-normal { font-size: 1.8rem; }
+  .large-text-medium { font-size: 2.2rem; }
+  .large-text-large { font-size: 2.6rem; }
+  .large-text-xlarge { font-size: 3rem; }
+  .large-bold, .large-strong { font-weight: bold; }
+  .large-unbold { font-weight: normal; }
+  .large-underline { text-decoration: underline; }
+  .large-text-center { text-align: center; }
+  .large-text-left { text-align: left; }
+  .large-text-right { text-align: right; }
+  .large-text-justify { text-align: justify; }
+  .large-show { display: block; }
+  .large-hide { display: none; } }
+/*custom client theme*/

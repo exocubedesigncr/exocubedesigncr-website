@@ -1,0 +1,280 @@
+
+/*=====================================*/
+/*=====================================*/
+/*=====================================*/
+/*=== Exocube Zero Theme responsive ===*/
+/*=====================================*/
+/*=====================================*/
+/*=====================================*/
+
+/*-----reset init style------*/
+*{
+	box-sizing: border-box !important;
+	font-family: 'Barlow', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;
+}
+.header, .footer, .main-content {
+	display: block;
+	width: 100%;
+	min-height: 100px;
+	margin: auto;
+}
+.wrap {
+	display: block;
+	max-width: 1280px;
+	margin: auto;
+}
+
+/*------row , flex properties------*/
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.row.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.row .flex-align-center {
+	display: flex;
+	align-items: center;
+}
+.row .flex-align-top {
+	display: flex;
+	align-items: flex-start;
+}
+.row .flex-align-bottom {
+	display: flex;
+	align-items: flex-end;
+}
+.row .column, .row .columns{
+    float: left;
+    padding: 10px;
+}
+
+/*-----font and text properties------*/
+h1, .h1{
+	font-size: 4.8rem;
+}
+h2, .h2{
+	font-size: 4.2rem;
+}
+h3, .h3{
+	font-size: 3.6rem;
+}
+h4, .h4{
+	font-size: 3rem;
+}
+h5, .h5{
+	font-size: 2.4rem;
+}
+h6, .h6{
+	font-size: 1.8rem;
+}
+.text-tiny{
+	font-size: 1rem;
+}
+.text-small{
+	font-size: 1.4rem;
+}
+p, .text-normal{
+	font-size: 1.8rem;
+}
+.text-medium{
+	font-size: 2.2rem;
+}
+.text-large{
+	font-size: 2.6rem;
+}
+.text-xlarge{
+	font-size: 3rem;
+}
+.bold, .strong{
+	font-weight: bold;
+}
+.unbold,{
+	font-weight: normal;
+}
+.underline{
+	text-decoration: underline;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-justify{
+	text-align: justify;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+
+/*------main media query loop------*/
+$mqLoop:(
+	tiny: 0px,
+	small: 426px,
+	medium: 768px,
+	large: 1024px
+);
+$cols:(
+	col-1: 8.33%,
+	col-2: 16.66%,
+	col-3: 25%,
+	col-4: 33.33%,
+	col-5: 41.66%,
+	col-6: 50%,
+	col-7: 58.33%,
+	col-8: 66.66%,
+	col-9: 75%,
+	col-10: 83.33%,
+	col-11: 91.66%,
+	col-12: 100%
+);
+$sizePrefix:(
+	zero:	0,
+	tiny:	1rem,
+	small:	2rem,
+	medium:	4rem,
+	large:	8rem,
+	xlarge:	16rem
+);
+
+@each $mqKey, $mqSize in $mqLoop {
+	@media screen and (min-width: $mqSize) {
+		/*------cols grid------*/
+		@each $colKey, $colSize in $cols {
+			.#{$mqKey}-#{$colKey}{
+				width: $colSize;
+			}
+		}
+		/*----margin size prefix----*/
+		@each $spKey, $spValue in $sizePrefix {
+			.#{$mqKey}-margin-#{$spKey}{
+				margin: $spValue;
+			}
+			.#{$mqKey}-margin-top-#{$spKey}{
+				margin-top: $spValue;
+			}
+			.#{$mqKey}-margin-bottom-#{$spKey}{
+				margin-bottom: $spValue;
+			}
+			.#{$mqKey}-margin-left-#{$spKey}{
+				margin-left: $spValue;
+			}
+			.#{$mqKey}-margin-right-#{$spKey}{
+				margin-right: $spValue;
+			}
+			.#{$mqKey}-margin-horiz-#{$spKey}{
+				margin-top: $spValue;
+				margin-bottom: $spValue;
+			}
+			.#{$mqKey}-margin-vert-#{$spKey}{
+				margin-left: $spValue;
+				margin-right: $spValue;
+			}
+		}
+		/*----paddings size prefix----*/
+		@each $spKey, $spValue in $sizePrefix {
+			.#{$mqKey}-padding-#{$spKey}{
+				padding: $spValue;
+			}
+			.#{$mqKey}-padding-top-#{$spKey}{
+				padding-top: $spValue;
+			}
+			.#{$mqKey}-padding-bottom-#{$spKey}{
+				padding-bottom: $spValue;
+			}
+			.#{$mqKey}-padding-left-#{$spKey}{
+				padding-left: $spValue;
+			}
+			.#{$mqKey}-padding-right-#{$spKey}{
+				padding-right: $spValue;
+			}
+			.#{$mqKey}-padding-horiz-#{$spKey}{
+				padding-top: $spValue;
+				padding-bottom: $spValue;
+			}
+			.#{$mqKey}-padding-vert-#{$spKey}{
+				padding-left: $spValue;
+				padding-right: $spValue;
+			}
+		}
+		/*----font and text properties----*/
+		.#{$mqKey}-h1{
+			font-size: 4.8rem;
+		}
+		.#{$mqKey}-h2{
+			font-size: 4.2rem;
+		}
+		.#{$mqKey}-h3{
+			font-size: 3.6rem;
+		}
+		.#{$mqKey}-h4{
+			font-size: 3rem;
+		}
+		.#{$mqKey}-h5{
+			font-size: 2.4rem;
+		}
+		.#{$mqKey}-h6{
+			font-size: 1.8rem;
+		}
+		.#{$mqKey}-text-tiny{
+			font-size: 1rem;
+		}
+		.#{$mqKey}-text-small{
+			font-size: 1.4rem;
+		}
+		.#{$mqKey}-text-normal{
+			font-size: 1.8rem;
+		}
+		.#{$mqKey}-text-medium{
+			font-size: 2.2rem;
+		}
+		.#{$mqKey}-text-large{
+			font-size: 2.6rem;
+		}
+		.#{$mqKey}-text-xlarge{
+			font-size: 3rem;
+		}
+		.#{$mqKey}-bold, .#{$mqKey}-strong{
+			font-weight: bold;
+		}
+		.#{$mqKey}-unbold,{
+			font-weight: normal;
+		}
+		.#{$mqKey}-underline{
+			text-decoration: underline;
+		}
+		.#{$mqKey}-text-center{
+			text-align: center;
+		}
+		.#{$mqKey}-text-left{
+			text-align: left;
+		}
+		.#{$mqKey}-text-right{
+			text-align: right;
+		}
+		.#{$mqKey}-text-justify{
+			text-align: justify;
+		}
+		.#{$mqKey}-show{
+			display: block;
+		}
+		.#{$mqKey}-hide{
+			display: none;
+		}
+	}
+}
