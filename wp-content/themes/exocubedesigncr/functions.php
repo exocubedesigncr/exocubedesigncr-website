@@ -61,3 +61,5 @@ function exocube_theme_scripts() {
 	wp_enqueue_style( 'exocube-theme-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'exocube_theme_scripts' );
+
+
